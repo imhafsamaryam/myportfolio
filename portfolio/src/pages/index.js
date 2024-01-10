@@ -1,29 +1,76 @@
 import React, { useState } from 'react'
 import Contact from './contact';
 import Info from './info';
-import Github from '../components/images/github-sign.png'
-import Linkedin from '../components/images/linkedin.png'
-import Whatsapp from '../components/images/whatsapp.png'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import About from './about';
+import Projects from './projects';
+import handleViewport from 'react-in-viewport';
+
+const InfoBlock = handleViewport(Info, /** options: {}, config: {} **/);
+const AboutBlock = handleViewport(About, /** options: {}, config: {} **/);
+const ProjectsBlock = handleViewport(Projects, /** options: {}, config: {} **/);
+const ContactBlock = handleViewport(Contact, /** options: {}, config: {} **/);
 
 const Index = () => {
-    const [openTab, setOpenTab] = useState(2);
+    const [openTab, setOpenTab] = useState("Home");
+
+    const navList = ["Home", "About", "Projects", "Contact"]
+
+    const navItemHandler = (item) => {
+        setOpenTab(item)
+    }
+
+
     return (
-        <div className='h-[100vh] flex flex-col justify-between bg-[#000000] px-[3.5rem] py-[1rem]'>
-            <div className='text-white'>
-                header
-            </div>
-            <div>
-                <div className={openTab === 1 ? "block" : "hidden"}>
-                    <Contact />
-                </div>
-                <div className={openTab === 2 ? "block" : "hidden"}>
-                    <Info />
-                </div>
+        <div className='bg-[#0b111c] relative  flex flex-col justify-between py-[1rem]'>
+            <div className='text-white flex gap-2 fixed top-[1rem] right-[3.5rem] justify-end z-10'>
+
+                {navList.map((item) => {
+                    return <AnchorLink
+                        key={item} href={`#${item}`} onClick={() => navItemHandler(item)}>
+                        <div
+                            className={openTab == item ? "text-[#FFFFFF] font-[600] pb-[0.5rem] px-3 border-b-2 cursor-pointer" : " cursor-pointer text-[#ede3e3] px-3"}
+                        >
+
+                            {item}
+                        </div>
+                    </AnchorLink>
+                })}
+
             </div>
 
-            <div>
-                <div className='flex justify-between items-center text-[#C5C6C7] text-[14px] font-medium' >
-                    <a href='/'>Download Resume</a>
+
+            <InfoBlock onEnterViewport={() => {
+                console.log('enter info');
+                navItemHandler("Home")
+            }} />
+            {/* <Info /> */}
+
+            <AboutBlock onEnterViewport={() => {
+                console.log('enter about');
+                navItemHandler("About")
+            }} />
+            {/* <About /> */}
+
+            <ProjectsBlock onEnterViewport={() => {
+                console.log('enter projects');
+                navItemHandler("Projects")
+            }} />
+            {/* <Projects /> */}
+
+            <ContactBlock onEnterViewport={() => {
+                console.log('enter contact');
+                navItemHandler("Contact")
+            }} />
+            {/* <Contact /> */}
+
+            {/* <div>
+                <div className='flex  justify-between ml-auto mr-0 max-w-[60%]  items-end text-[#C5C6C7] text-[14px] font-medium' >
+                    <a href='/'>Download Resume</a> 
+                    <img
+                        className='fixed bottom-0 left-0'
+                        src="/images/kitty.jpg" alt='kitty' width={"10%"}
+                    />
                     <div className='flex gap-2  bg-transparent border-[#C5C6C7] border-[1px] px-[0.2rem] py-[0.2rem] rounded-full '>
                         <a
                             onClick={() => setOpenTab(1)}
@@ -46,16 +93,25 @@ const Index = () => {
                         >
                             Services
                         </a>
-                        {/* <a href='/' className='px-[1.5rem] py-[0.5rem]'>Projects</a> */}
+                         <a href='/' className='px-[1.5rem] py-[0.5rem]'>Projects</a> 
                     </div>
-                    <div>
-                        {/* <Github />
-                        <Linkedin />
-                        <Whatsapp /> */}
+                    <div className='flex gap-[1rem]'>
+                        <img
+                            // className='fixed bottom-0 left-0'
+                            src="/images/github-sign.png" alt='github' width={"25vw"}
+                        />
+                        <img
+                            // className='fixed bottom-0 left-0'
+                            src="/images/linkedin.png" alt='linkedin' width={"25vw"}
+                        />
+                        <img
+                            // className='fixed bottom-0 left-0'
+                            src="/images/whatsapp.svg" alt='whatsapp' width={"25vw"}
+                        />
 
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
 
     )

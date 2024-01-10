@@ -1,4 +1,122 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.home-bg {
+  background-image: url("../public/images/mountainBg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.fade-away {
+  background-image: url("../public/images/me.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 650px;
+  height: 90vh;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  background-image: -webkit-linear-gradient(
+      left,
+      rgba(11, 17, 28, 0) 0%,
+      rgba(11, 17, 28, 0) 20%,
+      rgba(11, 17, 28, 0.9) 95%,
+      rgba(11, 17, 28, 1) 100%
+    ),
+    url("../public/images/me.jpg");
+
+  /* box-sizing: border-box;
+  box-shadow: inset -130px -100px 100px 0 #0b111c; */
+  /* box-shadow: 20px 0px 20px 0px #4779C0 inset; */
+  /* border-radius: 500px; */
+}
+
+.extra-size-font {
+  font-weight: 900;
+  color: #0b111c;
+  font-size: 11em;
+  background: -webkit-linear-gradient(
+    -90deg,
+    #223257 40%,
+    #202b3e 53%,
+    #0b111c 85%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px transparent;
+}
+
+.small-size-font-center {
+  font-weight: 900;
+  color: #fff;
+  font-size: 3.5em;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.small-size-font {
+  font-weight: 900;
+  color: #fff;
+  font-size: 3.5em;
+  position: absolute;
+  top: 4.5rem;
+  left: 15%;
+  transform: translate(-30%, 50%);
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-image {
+  opacity: 1;
+  display: block;
+  height: 450px;
+  width: 400px;
+  object-fit: contain;
+  object-position: center;
+  border: 4px solid #294792;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+
+.project-text {
+  transition: 0.5s ease;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  height: 300px;
+  width: 392px;
+  background: linear-gradient(transparent, #294792 90%);
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 2rem;
+}
+
+.project-container:hover {
+  box-shadow: 10px 10px #243458;
+  border-radius: 8px;
+}
+.project-container:hover .project-text {
+  opacity: 1;
+}
+
+.project-time {
+  font-weight: 900;
+  color: #fff;
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
