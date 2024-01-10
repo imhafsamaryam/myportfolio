@@ -38,7 +38,7 @@ const Info = ({ forwardedRef }) => {
                 </div>
                 <div className='flex gap-4 justify-end'>
                     <a
-                        href={"/files/HafsaMaryam.pdf"}
+                        href={"/files/hafsamaryam.pdf"}
                         download="HafsaMaryam-CV"
                         target="_blank"
                         rel="noreferrer"
