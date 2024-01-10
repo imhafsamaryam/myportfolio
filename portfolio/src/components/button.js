@@ -1,8 +1,10 @@
+
 import React from 'react'
 
-const Button = ({ text, bgColor, textColor, onTap }) => {
+const Button = ({ text, bgColor, textColor }) => {
     return (
         <div style={{
+            cursor: "pointer",
             backgroundColor: bgColor,
             border: "1px solid #FFFFFF",
             borderRadius: "10px",
@@ -13,10 +15,11 @@ const Button = ({ text, bgColor, textColor, onTap }) => {
             textAlign: "center",
             fontWeight: "600"
         }}
-            onClick={onTap}
         >
             {text}
         </div>
+
+
     )
 }
 

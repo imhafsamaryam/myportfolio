@@ -29,7 +29,7 @@ const Projects = ({ forwardedRef }) => {
                     />
                     <Project
                         projectTime={"Jan 2023"}
-                        bgUrl={"/images/mountainBg.jpg"}
+                        bgUrl={"/images/fyroomsoverview.jpg"}
                         projectTitle={"FyRooms"}
                         projectSubTitle={"Hotel booking website"}
                         navigateLink={"https://fyrooms.vercel.app/"}
@@ -53,14 +53,14 @@ const Projects = ({ forwardedRef }) => {
                     />
                     <Project
                         projectTime={"Apr 2023"}
-                        bgUrl={"/images/mountainBg.jpg"}
+                        bgUrl={"/images/Completelymodern.jpg"}
                         projectTitle={"Completely"}
                         projectSubTitle={"Home services Web & Mobile Application"}
                         navigateLink={"https://www.completely.ch/en"}
                     />
                     <Project
                         projectTime={"Mar 2023"}
-                        bgUrl={"/images/mountainBg.jpg"}
+                        bgUrl={"/images/devsed.png"}
                         projectTitle={"Devsed"}
                         projectSubTitle={"IT services website"}
                         navigateLink={"https://devsed.com/"}

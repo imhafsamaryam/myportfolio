@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/button'
 
+
 const Info = ({ forwardedRef }) => {
 
 
@@ -36,7 +37,14 @@ const Info = ({ forwardedRef }) => {
 
                 </div>
                 <div className='flex gap-4 justify-end'>
-                    <Button text={"Download CV"} textColor={"#FFFFFF"} />
+                    <a
+                        href={"/files/HafsaMaryam.pdf"}
+                        download="HafsaMaryam-CV"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Button text={"Download CV"} textColor={"#FFFFFF"} />
+                    </a>
                     <Button text={"Hire Me!"} textColor={"#0b111c"} bgColor={"#FFFFFF"} />
                 </div>
             </div>
