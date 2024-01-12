@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import About from './about';
 import Projects from './projects';
 import handleViewport from 'react-in-viewport';
+import Footer from '../components/footer';
 
 const InfoBlock = handleViewport(Info, /** options: {}, config: {} **/);
 const AboutBlock = handleViewport(About, /** options: {}, config: {} **/);
@@ -29,7 +30,7 @@ const Index = () => {
                     return <AnchorLink
                         key={item} href={`#${item}`} onClick={() => navItemHandler(item)}>
                         <div
-                            className={openTab == item ? "text-[#FFFFFF] font-[600] pb-[0.5rem] px-3 border-b-2 cursor-pointer" : " cursor-pointer text-[#ede3e3] px-3"}
+                            className={openTab == item ? "text-[#FFFFFF] fontfamily font-[500] pb-[0.5rem] px-3 border-b-2 cursor-pointer" : " fontfamily cursor-pointer text-[#ede3e3] px-3"}
                         >
 
                             {item}
@@ -63,6 +64,7 @@ const Index = () => {
                 navItemHandler("Contact")
             }} />
             {/* <Contact /> */}
+            <Footer/>
 
             {/* <div>
                 <div className='flex  justify-between ml-auto mr-0 max-w-[60%]  items-end text-[#C5C6C7] text-[14px] font-medium' >

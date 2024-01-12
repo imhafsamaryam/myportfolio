@@ -11,7 +11,7 @@ const Button = ({ text, bgColor, textColor }) => {
             width: "6rem",
             color: textColor,
             padding: "8px",
-            fontSize: "12px",
+            fontSize: "11px",
             textAlign: "center",
             fontWeight: "600"
         }}

@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 
 const Projects = ({ forwardedRef }) => {
 
-    let navigate = useNavigate(); 
+    let navigate = useNavigate();
 
     return (
         <div ref={forwardedRef} id='Projects' className='text-[#FFFFFF] relative px-[3.5rem] '>
-            <div className='extra-size-font'>
+            <div className='extra-size-font fontfamily'>
                 Projects
             </div>
-            <div className='small-size-font'>
+            <div className='small-size-font-projects fontfamily'>
                 Projects
             </div>
             <p className='text-[14px] text-[#e8e7e7] absolute top-[13rem] left-[10%]'>
@@ -28,23 +28,23 @@ const Projects = ({ forwardedRef }) => {
                         navigateLink={"/"}
                     />
                     <Project
+                        projectTime={"Apr 2023"}
+                        bgUrl={"/images/Completelymodern.jpg"}
+                        projectTitle={"Completely"}
+                        projectSubTitle={"Home services Web & Mobile Application"}
+                        navigateLink={"https://www.completely.ch/en"}
+                    />
+                    <Project
                         projectTime={"Jan 2023"}
                         bgUrl={"/images/fyroomsoverview.jpg"}
                         projectTitle={"FyRooms"}
                         projectSubTitle={"Hotel booking website"}
                         navigateLink={"https://fyrooms.vercel.app/"}
                     />
-                    {/* <Project
-                        projectTime={"Jan 2022"}
-                        bgUrl={"/images/mountainBg.jpg"}
-                        projectTitle={"Completely"}
-                        projectSubTitle={"Reactjs"}
-                        navigateLink={"https://www.completely.ch/en"}
-                    /> */}
                 </div>
                 <div >
 
-                <Project
+                    <Project
                         projectTime={"Jan 2024"}
                         bgUrl={"/images/fastfit4.jpg"}
                         projectTitle={"Fast & Fit"}
@@ -52,12 +52,13 @@ const Projects = ({ forwardedRef }) => {
                         navigateLink={"/"}
                     />
                     <Project
-                        projectTime={"Apr 2023"}
-                        bgUrl={"/images/Completelymodern.jpg"}
-                        projectTitle={"Completely"}
-                        projectSubTitle={"Home services Web & Mobile Application"}
-                        navigateLink={"https://www.completely.ch/en"}
+                        projectTime={"Jan 2022"}
+                        bgUrl={"/images/nft.png"}
+                        projectTitle={"NFT Dashboard"}
+                        projectSubTitle={"React redux NFT dashboard"}
+                        navigateLink={"https://marketplace-dashboard-ten.vercel.app/"}
                     />
+
                     <Project
                         projectTime={"Mar 2023"}
                         bgUrl={"/images/devsed.png"}

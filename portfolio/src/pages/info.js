@@ -21,8 +21,8 @@ const Info = ({ forwardedRef }) => {
                     Hey there!  I'm
                 </p>
 
-                <p className="text-[66px]  font-medium text-right leading-tight text-[#FFFFFF]">
-                    Hafsa Maryam
+                <p className="text-[66px] uppercase fontfamily    font-medium text-right leading-tight text-[#FFFFFF]">
+                    Hafsa <br></br> Maryam
                 </p>
 
                 <div className='text-right flex justify-end gap-5 py-[1.5rem]'>
@@ -30,7 +30,7 @@ const Info = ({ forwardedRef }) => {
 
 </div> */}
                     <div>
-                        <p className="text-[16px] text-[#FFFFFF] w-[20rem] ">
+                        <p className="text-[15px] text-[#FFFFFF] w-[20rem] ">
                             Front-end Developer. I'm Passionate about crafting beautiful websites and seamless mobile experiences.
                         </p>
                     </div>
