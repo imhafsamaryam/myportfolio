@@ -1,4 +1,5 @@
 import React from 'react'
+import TestPage from './test'
 
 const Contact = ({ forwardedRef }) => {
   return (
@@ -26,6 +27,7 @@ const Contact = ({ forwardedRef }) => {
           </div>
         </div>
       </div>
+      {/* <TestPage/> */}
     </div>
   )
 }

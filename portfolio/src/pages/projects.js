@@ -17,9 +17,15 @@ const Projects = ({ forwardedRef }) => {
             <p className='text-[14px] text-[#e8e7e7] absolute top-[13rem] left-[10%]'>
                 Discover a collection of my prominent development projects showcased here.
             </p>
-            <div className='py-[4rem] px-[6rem] flex gap-36 justify-end'>
+            <div className='py-[2rem] px-[6rem] flex gap-36 justify-end'>
                 <div className='mt-[12rem]'>
-
+                    <Project
+                        projectTime={"Jan 2024"}
+                        bgUrl={"/images/popx.png"}
+                        projectTitle={"PopX"}
+                        projectSubTitle={"React Mobile Application"}
+                        navigateLink={"https://pop-x-educase.vercel.app/"}
+                    />
                     <Project
                         projectTime={"Jun 2023"}
                         bgUrl={"/images/pactime1.jpg"}
@@ -43,6 +49,13 @@ const Projects = ({ forwardedRef }) => {
                     />
                 </div>
                 <div >
+                    <Project
+                        projectTime={"Jan 2024"}
+                        bgUrl={"/images/react-drag.png"}
+                        projectTitle={"User Diary"}
+                        projectSubTitle={"React draggable component"}
+                        navigateLink={"https://react-drag.vercel.app/"}
+                    />
 
                     <Project
                         projectTime={"Jan 2024"}
@@ -51,6 +64,7 @@ const Projects = ({ forwardedRef }) => {
                         projectSubTitle={"Fitness Application"}
                         navigateLink={"/"}
                     />
+
                     <Project
                         projectTime={"Jan 2022"}
                         bgUrl={"/images/nft.png"}
