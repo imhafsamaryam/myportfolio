@@ -14,7 +14,7 @@ const Contact = ({ forwardedRef }) => {
         <img src={"/images/femaleuser.svg"} alt="Avatar" className='' />
         <div>
           <div className='flex gap-3 align-middle'>
-            <img src={"/images/linkedin.svg"} alt="Avatar" className='' width={"20px"} />
+            <img src={"/images/linkedin.svg"} alt="Avatar" className='' width={"16px"} />
             <div className='small-size-font-details'>hafsamaryam</div>
           </div>
           <div className='flex gap-3 align-middle'>
