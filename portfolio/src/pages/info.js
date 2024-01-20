@@ -12,7 +12,7 @@ const Info = ({ forwardedRef }) => {
 
                 </div>
             </div>
-            <div className='mt-[3rem] lg:mt-0 flex flex-col  justify-center'>
+            <div className='mt-[7rem] lg:mt-0 flex flex-col  justify-center'>
                 <p className="text-xl text-center lg:text-right text-[#FFFFFF]">
                     Hey there!  I'm
                 </p>
