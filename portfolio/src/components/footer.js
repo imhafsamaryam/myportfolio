@@ -24,13 +24,13 @@ const Footer = () => {
             >
                 <Github />
             </a>
-            <a
+            {/* <a
                 href={"https://api.whatsapp.com/send?phone=917306498992"}
                 target="_blank"
                 rel="noreferrer"
             >
                 <Whatsapp />
-            </a>
+            </a> */}
             {/* <a
                 href={"/"}
                 target="_blank"
