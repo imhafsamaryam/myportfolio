@@ -17,7 +17,7 @@ const Projects = ({ forwardedRef }) => {
             <p className='text-[14px] text-[#e8e7e7] absolute top-[9rem] lg:top-[13rem] left-[10%]'>
                 Discover a collection of my prominent development projects showcased here.
             </p>
-            <div className='py-[0rem] lg:py-[2rem] px-[2rem] lg:px-[6rem] lg:flex lg:gap-36 lg:justify-end'>
+            <div className='py-[0rem] lg:py-[2rem] px-[1rem] lg:px-[6rem] lg:flex lg:gap-36 lg:justify-end'>
                 <div className=' mt-[9rem] lg:mt-[12rem] '>
                     <Project
                         projectTime={"Jan 2024"}
