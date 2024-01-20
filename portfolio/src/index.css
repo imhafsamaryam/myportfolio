@@ -293,7 +293,7 @@
   .extra-size-font {
     font-weight: 900;
     color: #0b111c;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     background: -webkit-linear-gradient(
       -90deg,
       #223257 40%,
@@ -307,7 +307,7 @@
   .extra-size-font-contact {
     font-weight: 900;
     color: #0b111c;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     background: -webkit-linear-gradient(
       -90deg,
       #223257 40%,
@@ -349,7 +349,7 @@
     color: #fff;
     font-size: 2.5em;
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     left: 35%;
     transform: translate(-30%, 50%);
   }
