@@ -6,7 +6,7 @@ const Info = ({ forwardedRef }) => {
 
 
     return (
-        <div ref={forwardedRef} id='Home' className='pr-[0rem] lg:pr-[3.5rem]  w-full lg:flex lg:justify-between'>
+        <div ref={forwardedRef} id='Home' className='pr-[0rem] lg:pr-[3.5rem]  w-full flex flex-col-reverse lg:flex lg:justify-between'>
             <div>
                 <div className='fade-away'>
 
