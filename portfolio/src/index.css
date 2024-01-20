@@ -265,9 +265,9 @@
     background-image: url("../public/images/me.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     /* position: absolute;
     top: 4rem;
     left: 0; */
