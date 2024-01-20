@@ -73,7 +73,7 @@ const Index = () => {
                             : "absolute -translate-y-28 hidden  duration-500 transition-all"
                     }
                 >
-                    <div className='text-white displayNone flexcolcenter h-[90%]'>
+                    <div className='text-white displayNone flexcolcenter h-[80%]'>
 
                         {navList.map((item) => {
                             return <AnchorLink
