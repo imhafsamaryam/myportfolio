@@ -52,6 +52,11 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> JS</div>
 
                             </div>
+
+
+
+                        </div>
+                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flex flex-col gap-4 align-middle justify-center'>
                                 <img
                                     src="/images/reacct.png" alt='kitty' width={"60px"} height={"50px"}
@@ -60,10 +65,6 @@ const About = ({ forwardedRef }) => {
 
                             </div>
 
-
-
-                        </div>
-                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/flutter.png" alt='kitty' width={"80px"} height={"50px"}
@@ -78,6 +79,12 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> Wordpress</div>
 
                             </div>
+
+
+
+
+                        </div>
+                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/python.png" className='rounded-full' alt='kitty' width={"60px"} height={"50px"}
@@ -93,11 +100,6 @@ const About = ({ forwardedRef }) => {
 
                             </div>
 
-
-
-
-                        </div>
-                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/chakraui.png" alt='kitty' className='rounded-full' width={"60px"} height={"50px"}
@@ -105,6 +107,10 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> Chakra UI</div>
 
                             </div>
+
+
+                        </div>
+                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/tailwind.png" className='rounded-full' alt='kitty' width={"60px"} height={"50px"}
@@ -126,6 +132,7 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> GraphQL</div>
 
                             </div>
+
 
 
                         </div>
@@ -151,6 +158,11 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> i18n <br></br> Localization</div>
 
                             </div>
+
+
+
+                        </div>
+                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/vscode.png" alt='kitty' width={"60px"} height={"50px"}
@@ -159,9 +171,6 @@ const About = ({ forwardedRef }) => {
 
                             </div>
 
-
-                        </div>
-                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/git.jpg" className='rounded-full' alt='kitty' width={"60px"} height={"50px"}
@@ -176,6 +185,9 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> Figma</div>
 
                             </div>
+
+                        </div>
+                        <div className='py-[1.5rem] flex justify-between'>
                             <div className='flexcolcenter'>
                                 <img
                                     src="/images/androidstudio.png" className='rounded-full' alt='kitty' width={"60px"} height={"50px"}
@@ -183,8 +195,6 @@ const About = ({ forwardedRef }) => {
                                 <div className=' text-[12px] font-normal text-center'> Android Studio</div>
 
                             </div>
-
-
                         </div>
                     </div>
 
