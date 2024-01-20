@@ -18,7 +18,7 @@ const Projects = ({ forwardedRef }) => {
                 Discover a collection of my prominent development projects showcased here.
             </p>
             <div className='py-[0rem] lg:py-[2rem] px-[2rem] lg:px-[6rem] lg:flex lg:gap-36 lg:justify-end'>
-                <div className=' mt-[6rem] lg:mt-[12rem] '>
+                <div className=' mt-[9rem] lg:mt-[12rem] '>
                     <Project
                         projectTime={"Jan 2024"}
                         bgUrl={"/images/popx.png"}
