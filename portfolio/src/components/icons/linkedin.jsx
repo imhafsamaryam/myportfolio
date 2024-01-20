@@ -5,8 +5,8 @@ const Linkedin = () => {
     <div>
       <svg
         fill="#202b3e"
-        height="25px"
-        width="25px"
+        height="24px"
+        width="24px"
         version="1.1"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"

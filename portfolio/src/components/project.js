@@ -32,13 +32,13 @@ const Project = ({ bgUrl, projectSubTitle, projectTitle, projectTime, navigateLi
                 <div className='  text-[24px]'>{projectTime}</div>
 
             </div>
-            <div class="mb-[8rem] project-container">
+            <div class="mb-[4rem] lg:mb-[8rem] project-container">
                 <img src={bgUrl} alt="Avatar" class="project-image" />
                 <a href={navigateLink} target='_blank'>
                     <div class="project-text" >
                         <div>
-                            <div className='font-[700] text-[28px] uppercase '>{projectTitle}</div>
-                            <div className='text-[14px]'>{projectSubTitle}</div>
+                            <div className='font-[700] text-[18px] lg:text-[28px] uppercase '>{projectTitle}</div>
+                            <div className='text-[10px] lg:text-[14px]'>{projectSubTitle}</div>
                         </div>
                         <i class="fa fa-external-link-square" aria-hidden="true" style={{ fontSize: "30px" }}></i>
 

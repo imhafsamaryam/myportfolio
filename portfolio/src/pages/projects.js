@@ -7,18 +7,18 @@ const Projects = ({ forwardedRef }) => {
     let navigate = useNavigate();
 
     return (
-        <div ref={forwardedRef} id='Projects' className='text-[#FFFFFF] relative px-[3.5rem] '>
+        <div ref={forwardedRef} id='Projects' className='text-[#FFFFFF] relative px-[1.5rem] lg:px-[3.5rem] '>
             <div className='extra-size-font fontfamily'>
                 Projects
             </div>
             <div className='small-size-font-projects fontfamily'>
                 Projects
             </div>
-            <p className='text-[14px] text-[#e8e7e7] absolute top-[13rem] left-[10%]'>
+            <p className='text-[14px] text-[#e8e7e7] absolute top-[9rem] lg:top-[13rem] left-[10%]'>
                 Discover a collection of my prominent development projects showcased here.
             </p>
-            <div className='py-[2rem] px-[6rem] flex gap-36 justify-end'>
-                <div className='mt-[12rem]'>
+            <div className='py-[0rem] lg:py-[2rem] px-[2rem] lg:px-[6rem] lg:flex lg:gap-36 lg:justify-end'>
+                <div className=' mt-[6rem] lg:mt-[12rem] '>
                     <Project
                         projectTime={"Jan 2024"}
                         bgUrl={"/images/popx.png"}

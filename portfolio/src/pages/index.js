@@ -14,17 +14,22 @@ const ContactBlock = handleViewport(Contact, /** options: {}, config: {} **/);
 
 const Index = () => {
     const [openTab, setOpenTab] = useState("Home");
+    const [menu, openMenu] = useState(false);
 
+    const click = () => {
+        if (openMenu) openMenu(!menu);
+    };
     const navList = ["Home", "About", "Projects", "Contact"]
 
     const navItemHandler = (item) => {
         setOpenTab(item)
+        openMenu(false)
     }
 
 
     return (
-        <div className='bg-[#0b111c] relative  flex flex-col justify-between py-[1rem]'>
-            <div className='text-white flex gap-2 fixed top-[1rem] right-[3.5rem] justify-end z-10'>
+        <div className='bg-[#0b111c] relative  flex flex-col justify-between lg:py-[1rem]'>
+            <div className='text-white hidden lg:flex lg:gap-2 lg:fixed lg:top-[1rem] lg:right-[3.5rem] lg:justify-end z-10'>
 
                 {navList.map((item) => {
                     return <AnchorLink
@@ -38,6 +43,53 @@ const Index = () => {
                     </AnchorLink>
                 })}
 
+            </div>
+
+            <div>
+                <div onClick={click} className={menu ? "buttn -menu-open" : "buttn displayNone"}>
+                    <svg
+                        width="35px"
+                        height="40px"
+                        viewBox="0 0 48 48"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g>
+                            <line x1="0" y1="17" x2="48" y2="17" stroke-width="4" />
+                            <line x1="0" y1="31" x2="48" y2="31" stroke-width="4" />
+                        </g>
+
+                        <g>
+                            <line x1="0" y1="24" x2="48" y2="24" stroke-width="4" />
+                            <line x1="0" y1="24" x2="48" y2="24" stroke-width="4" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div
+                    className={
+                        menu
+                            ? "text-white overflow-hidden fixed overflow-y-hidden bg-[#0b111c] scroll-hidden h-[100vh] w-full z-10 transition-all duration-500 translate-y-0 "
+                            : "absolute -translate-y-28 hidden  duration-500 transition-all"
+                    }
+                >
+                    <div className='text-white displayNone flexcolcenter h-[90%]'>
+
+                        {navList.map((item) => {
+                            return <AnchorLink
+                                key={item} href={`#${item}`} onClick={() => navItemHandler(item)}>
+                                <div
+                                    className={openTab == item ? "text-[#FFFFFF] fontfamily font-[500] pb-[0.5rem] px-3 border-b-2 w-max cursor-pointer" : " fontfamily cursor-pointer text-[#ede3e3] px-3"}
+                                >
+
+                                    {item}
+                                </div>
+                            </AnchorLink>
+                        })}
+
+                    </div>
+                    <Footer />
+                </div>
             </div>
 
 
@@ -64,7 +116,7 @@ const Index = () => {
                 navItemHandler("Contact")
             }} />
             {/* <Contact /> */}
-            <Footer/>
+            <Footer />
 
             {/* <div>
                 <div className='flex  justify-between ml-auto mr-0 max-w-[60%]  items-end text-[#C5C6C7] text-[14px] font-medium' >

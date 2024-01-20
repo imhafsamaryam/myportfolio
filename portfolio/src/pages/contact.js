@@ -3,7 +3,7 @@ import TestPage from './test'
 
 const Contact = ({ forwardedRef }) => {
   return (
-    <div ref={forwardedRef} id='Contact' className='h-[100vh] text-[#FFFFFF] relative px-[3.5rem] '>
+    <div ref={forwardedRef} id='Contact' className='h-[70vh] lg:h-[100vh] text-[#FFFFFF] relative px-[1.5rem] lg:px-[3.5rem]'>
       <div className='extra-size-font-contact fontfamily leading-none'>
         Let's Connect
       </div>

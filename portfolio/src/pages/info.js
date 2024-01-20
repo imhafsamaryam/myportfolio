@@ -6,37 +6,33 @@ const Info = ({ forwardedRef }) => {
 
 
     return (
-        <div ref={forwardedRef} id='Home' className='pr-[3.5rem]  w-full flex justify-between h-[100vh]'>
-            <div className=' flex justify-center text-end'>
-                {/* <img
-                    class='fade-away rounded-3xl '
-                    src="/images/me.jpg" alt='kitty'
-                /> */}
-                <div className='fade-away faded faded-bottom faded-left'>
+        <div ref={forwardedRef} id='Home' className='pr-[0rem] lg:pr-[3.5rem]  w-full lg:flex lg:justify-between'>
+            <div>
+                <div className='fade-away'>
 
                 </div>
             </div>
-            <div className=' flex flex-col  justify-center'>
-                <p className="text-xl text-right text-[#FFFFFF]">
+            <div className='mt-[3rem] lg:mt-0 flex flex-col  justify-center'>
+                <p className="text-xl text-center lg:text-right text-[#FFFFFF]">
                     Hey there!  I'm
                 </p>
 
-                <p className="text-[66px] uppercase fontfamily    font-medium text-right leading-tight text-[#FFFFFF]">
+                <p className="text-[46px] lg:text-[66px] uppercase fontfamily    font-medium text-center lg:text-right leading-tight text-[#FFFFFF]">
                     Hafsa <br></br> Maryam
                 </p>
 
-                <div className='text-right flex justify-end gap-5 py-[1.5rem]'>
+                <div className='text-center lg:text-right flex justify-center lg:justify-end gap-5 py-[1.5rem]'>
                     {/* <div className="h-[0.5rem] mt-[0.5rem] w-[4vw] rounded-md bg-[#FFFFFF]">
 
 </div> */}
                     <div>
-                        <p className="text-[15px] text-[#FFFFFF] w-[20rem] ">
+                        <p className="text-[14px] lg:text-[15px] text-[#FFFFFF] w-[20rem] ">
                             Front-end Developer. I'm Passionate about crafting beautiful websites and seamless mobile experiences.
                         </p>
                     </div>
 
                 </div>
-                <div className='flex gap-4 justify-end'>
+                <div className='flex gap-4 justify-center lg:justify-end'>
                     <a
                         href={"/files/hafsamaryam.pdf"}
                         download="HafsaMaryam-CV"

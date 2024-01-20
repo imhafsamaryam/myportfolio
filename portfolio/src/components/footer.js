@@ -3,6 +3,7 @@ import Linkedin from './icons/linkedin'
 import Github from './icons/github'
 import Whatsapp from './icons/whatsapp'
 import Twitter from './icons/twittle'
+import Fiverr from './icons/fiverr'
 
 const Footer = () => {
     return (
@@ -30,12 +31,19 @@ const Footer = () => {
             >
                 <Whatsapp />
             </a>
-            <a
+            {/* <a
                 href={"/"}
                 target="_blank"
                 rel="noreferrer"
             >
                 <Twitter />
+            </a> */}
+            <a
+                href={"https://www.fiverr.com/s/66B5kX"}
+                target="_blank"
+                rel="noreferrer"
+            >
+                <Fiverr/>
             </a>
         </div>
     )
