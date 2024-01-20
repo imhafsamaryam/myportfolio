@@ -39,7 +39,7 @@ const Footer = () => {
                 <Twitter />
             </a> */}
             <a
-                href={"https://www.fiverr.com/s/66B5kX"}
+                href={"https://www.fiverr.com/s/peEEvR"}
                 target="_blank"
                 rel="noreferrer"
             >

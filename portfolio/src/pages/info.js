@@ -41,7 +41,13 @@ const Info = ({ forwardedRef }) => {
                     >
                         <Button text={"Download CV"} textColor={"#FFFFFF"} />
                     </a>
-                    <Button text={"Hire Me!"} textColor={"#0b111c"} bgColor={"#FFFFFF"} />
+                    <a
+                        href={"https://www.fiverr.com/s/peEEvR"}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Button text={"Hire Me!"} textColor={"#0b111c"} bgColor={"#FFFFFF"} />
+                    </a>
                 </div>
             </div>
 
