@@ -29,7 +29,7 @@ const Project = ({ bgUrl, projectSubTitle, projectTitle, projectTime, navigateLi
             <div className='project-time'>
                 <div className="h-[0.3rem]  w-[3vw] rounded-md bg-[#FFFFFF]">
                 </div>
-                <div className='  text-[24px]'>{projectTime}</div>
+                <div className=' text-[16px] lg:text-[24px]'>{projectTime}</div>
 
             </div>
             <div class="mb-[4rem] lg:mb-[8rem] project-container">
