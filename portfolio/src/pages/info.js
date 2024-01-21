@@ -42,7 +42,7 @@ const Info = ({ forwardedRef }) => {
                         <Button text={"Download CV"} textColor={"#FFFFFF"} />
                     </a>
                     <a
-                        href={"https://www.fiverr.com/s/peEEvR"}
+                        href={"https://www.fiverr.com/hafsamaryam102/craft-pixel-perfect-dynamic-websites-in-reactjs"}
                         target="_blank"
                         rel="noreferrer"
                     >
