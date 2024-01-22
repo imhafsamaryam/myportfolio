@@ -41,7 +41,7 @@ const Projects = ({ forwardedRef }) => {
                         navigateLink={"https://www.completely.ch/en"}
                     />
                     <Project
-                        projectTime={"Jan 2023"}
+                        projectTime={"Sept 2022"}
                         bgUrl={"/images/fyroomsoverview.jpg"}
                         projectTitle={"FyRooms"}
                         projectSubTitle={"Hotel booking website"}
@@ -66,7 +66,7 @@ const Projects = ({ forwardedRef }) => {
                     />
 
                     <Project
-                        projectTime={"Jan 2022"}
+                        projectTime={"Apr 2023"}
                         bgUrl={"/images/nft.png"}
                         projectTitle={"NFT Dashboard"}
                         projectSubTitle={"React redux NFT dashboard"}
